@@ -1,5 +1,5 @@
 # Let's Go 
-### (f23-group09)
+(f23-group09)
 
 ## Our Compeitors
 - Evite
