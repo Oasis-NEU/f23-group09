@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import { supabase } from "./supabase";
+import { useState, useEffect } from "react";
 
 function App() {
   return (
