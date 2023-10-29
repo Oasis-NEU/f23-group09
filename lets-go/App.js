@@ -10,6 +10,9 @@ export default function App() {
   );
 }
 
+//Code for event creation view here
+
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
