@@ -20,9 +20,12 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   console.log(Dimensions.get("screen"))
   return (
-    <>
-    <LoginPage />
-    </>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Log In" component={ LoginPage } />
+        <Stack.Screen name="Selection Page" component={ SelectionScreen } />
+      </Stack.Navigator>
+    </NavigationContainer>
   )
 }
 

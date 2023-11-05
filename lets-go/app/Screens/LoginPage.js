@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     borderRadius: 4,
   },
   title: {
-    fontFamily: 'arial',
+    fontFamily: 'Arial',
     fontSize: 50,
     color: '#8fb35b',
     alignItems: 'center',
