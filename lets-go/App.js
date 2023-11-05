@@ -10,13 +10,19 @@ import {
 } from 'react-native';
 import SelectionScreen from './app/Screens/SelectionScreen';
 import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   console.log(Dimensions.get("screen"))
   return (
     <NavigationContainer>
-    <SelectionScreen />
+      <Stack.Navigator>
+        <Stack.Screen name="Selection Page" component={ SelectionScreen } />
+      </Stack.Navigator>
     </NavigationContainer>
   )
 }
