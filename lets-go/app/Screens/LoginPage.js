@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, SafeAreaView, Pressable, TextInput } from 'react-native';
+import { StyleSheet, Text, SafeAreaView, Pressable, TextInput, navi } from 'react-native';
 
-export default function LoginPage() {
+export default function LoginPage({ navigation }) {
   return (
     <SafeAreaView style={styles.container}> 
       <Text style={styles.title}>Lets Go!</Text>
