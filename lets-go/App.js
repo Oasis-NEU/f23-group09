@@ -8,7 +8,7 @@ import {
   Platform,
   Dimensions
 } from 'react-native';
-import { SelectionScreen } from './app/Screens/SelectionScreen';
+import SelectionScreen from './app/Screens/SelectionScreen';
 
 
 export default function App() {
