@@ -1,7 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, SafeAreaView, Pressable, TextInput } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-export default function LoginPage() {
+export default function LoginPage({ navigation }) {
   return (
     <SafeAreaView style={styles.container}> 
       <Text style={styles.title}>Lets Go!</Text>
@@ -29,7 +31,7 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     paddingHorizontal: 10,
     paddingVertical: 10,
-    height: 35,
+    height: 45,
   },
   text: {
     fontFamily: 'Arial',
@@ -40,6 +42,7 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 35,
+    width: 150,
     margin: 12,
     borderWidth: 1,
     padding: 10,
