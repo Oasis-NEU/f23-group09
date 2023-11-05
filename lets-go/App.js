@@ -9,13 +9,14 @@ import {
   Dimensions
 } from 'react-native';
 import SelectionScreen from './app/Screens/SelectionScreen';
+import LoginPage from './app/Screens/LoginPage';
 
 
 export default function App() {
   console.log(Dimensions.get("screen"))
   return (
     <>
-    <SelectionScreen />
+    <LoginPage />
     </>
   )
 }
