@@ -8,7 +8,7 @@ export default function LoginPage({ navigation }) {
     <SafeAreaView style={styles.container}> 
       <Text style={styles.title}>Lets Go!</Text>
       <TextInput style={styles.input} placeholder='username'/>
-      <TextInput style={styles.input} placeholder='password'/>
+      <TextInput style={styles.input} placeholder='password' secureTextEntry={true}/>
       <Pressable
         style={styles.button}
         onPress={() => navigation.navigate('Selection Page')}
