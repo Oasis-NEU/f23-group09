@@ -9,7 +9,10 @@ export default function LoginPage({ navigation }) {
       <Text style={styles.title}>Lets Go!</Text>
       <TextInput style={styles.input} placeholder='username'/>
       <TextInput style={styles.input} placeholder='password'/>
-      <Pressable style={styles.button}>
+      <Pressable
+        style={styles.button}
+        onPress={() => navigation.navigate('Selection Page')}
+      >
         <Text style={styles.text}>Log In</Text>
       </Pressable>
       <StatusBar style="auto" />
