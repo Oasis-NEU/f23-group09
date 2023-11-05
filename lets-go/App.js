@@ -21,7 +21,7 @@ export default function App() {
   console.log(Dimensions.get("screen"))
   return (
     <>
-    <SelectionScreen />
+    <LoginPage />
     </>
   )
 }
