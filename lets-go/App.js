@@ -9,14 +9,15 @@ import {
   Dimensions
 } from 'react-native';
 import SelectionScreen from './app/Screens/SelectionScreen';
+import { NavigationContainer } from '@react-navigation/native';
 
 
 export default function App() {
   console.log(Dimensions.get("screen"))
   return (
-    <>
+    <NavigationContainer>
     <SelectionScreen />
-    </>
+    </NavigationContainer>
   )
 }
 
