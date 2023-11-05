@@ -1,15 +1,13 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, TouchableHighlight } from 'react-native';
+import { View, Text, Image, StyleSheet } from 'react-native';
 
 const Tile = ({ name, date, image }) => {
   return (
-
     <View style={styles.tileContainer}>
       <Image source={{ uri: image }} style={styles.image} />
       <Text style={styles.name}>{name}</Text>
       <Text style={styles.date}>{date}</Text>
     </View>
-
   );
 };
 
