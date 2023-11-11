@@ -12,6 +12,12 @@ export default function LoginPage({ navigation }) {
       <Pressable style={styles.button}>
         <Text style={styles.text}>Log In</Text>
       </Pressable>
+      <Pressable
+        style={styles.button}
+        onPress={() => navigation.navigate('Selection Page')}
+      >
+        <Text style={styles.text}>Sign Up</Text>
+      </Pressable>
       <StatusBar style="auto" />
     </SafeAreaView>
   );
@@ -31,7 +37,8 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     paddingHorizontal: 10,
     paddingVertical: 10,
-    height: 45,
+    height: 40,
+    width: 95
   },
   text: {
     fontFamily: 'Arial',
