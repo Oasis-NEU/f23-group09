@@ -3,21 +3,17 @@ import { StyleSheet, Text, SafeAreaView, Pressable, TextInput } from 'react-nati
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-export default function LoginPage({ navigation }) {
+export default function SignUpScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}> 
       <Text style={styles.title}>Lets Go!</Text>
       <TextInput style={styles.input} placeholder='username'/>
+      <TextInput style={styles.input} placeholder='email'/>
       <TextInput style={styles.input} placeholder='password' secureTextEntry={true}/>
+      <TextInput style={styles.input} placeholder='confirm password'/>
       <Pressable
         style={styles.button}
-        onPress={() => navigation.navigate('Selection Page')}
-      >
-        <Text style={styles.text}>Log In</Text>
-      </Pressable>
-      <Pressable
-        style={styles.button}
-        onPress={() => navigation.navigate('Sign Up')}
+        onPress={() => navigation.navigate('Log In')}
       >
         <Text style={styles.text}>Sign Up</Text>
       </Pressable>
