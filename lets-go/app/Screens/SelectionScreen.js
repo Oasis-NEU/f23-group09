@@ -109,6 +109,6 @@ const styles = StyleSheet.create({
         margin: 8,
         padding: 16,
         borderRadius: 8,
-        backgroundColor: 'transparent',
+        backgroundColor: 'white',
       },
   });

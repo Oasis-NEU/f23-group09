@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     paddingHorizontal: 10,
     paddingVertical: 10,
+    margin: 5,
     height: 45,
     margin: 3,
   },
