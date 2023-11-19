@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     paddingVertical: 10,
     height: 45,
+    margin: 3,
   },
   text: {
     fontFamily: 'Arial',
@@ -48,7 +49,7 @@ const styles = StyleSheet.create({
   input: {
     height: 35,
     width: 150,
-    margin: 12,
+    margin: 3,
     borderWidth: 1,
     padding: 10,
     borderRadius: 4,
