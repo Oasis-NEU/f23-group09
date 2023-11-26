@@ -2,15 +2,34 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, SafeAreaView, Pressable, TextInput } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { supabase } from '../../supabase';
 
 export default function SignUpScreen({ navigation }) {
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+
+  const signUp = async () => {
+    if (password !== confirmPassword) {
+      alert('passwords do not match')
+      return;
+    }
+
+    
+    let { data: User, error } = await supabase
+    .from('User')
+    .select('*')
+    
+  }
+
   return (
     <SafeAreaView style={styles.container}> 
       <Text style={styles.title}>Lets Go!</Text>
-      <TextInput style={styles.input} placeholder='username'/>
-      <TextInput style={styles.input} placeholder='email'/>
-      <TextInput style={styles.input} placeholder='password' secureTextEntry={true}/>
-      <TextInput style={styles.input} placeholder='confirm password'/>
+      <TextInput style={styles.input} placeholder='username' onChangeText={(text) => setUsername}/>
+      <TextInput style={styles.input} placeholder='email' onChangeText={(text) => setEmail}/>
+      <TextInput style={styles.input} placeholder='password' secureTextEntry={true} onChangeText={(text) => setPassword}/>
+      <TextInput style={styles.input} placeholder='confirm password'secureTextEntry={true} onChangeText={(text) => setConfirmPassword}/>
       <Pressable
         style={styles.button}
         onPress={() => navigation.navigate('Log In')}
