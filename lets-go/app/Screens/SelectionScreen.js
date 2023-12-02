@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, FlatList, StyleSheet, SafeAreaView } from 'react-native';
 import Tile from '../components/Tile'; 
+import FloatingButton from '../components/FloatingButton';
 
 const data = [
   {
@@ -94,6 +95,10 @@ export default function SelectionScreen() {
             keyExtractor={(item) => item.id}
             numColumns={2}
           />
+          <FloatingButton
+            style={styles.floatinBtn} 
+            onPress={() => alert(`I'm being clicked!`)}
+          />
         </SafeAreaView>
     );
     };
@@ -109,6 +114,11 @@ const styles = StyleSheet.create({
         margin: 8,
         padding: 16,
         borderRadius: 8,
-        backgroundColor: 'white',
+        backgroundColor: 'transparent',
       },
+      floatinBtn: {
+        position: 'absolute',
+        bottom: 25,
+        right: 25,
+      }
   });

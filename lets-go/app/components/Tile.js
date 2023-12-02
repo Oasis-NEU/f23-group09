@@ -11,6 +11,10 @@ const Tile = ({ name, date, image }) => {
   );
 };
 
+
+// instead of the image being a cirlce, I want it to take up the top half of the tile
+// and the name and date to take up the bottom half of the tile
+
 const styles = StyleSheet.create({
   tileContainer: {
     flex: 1,
