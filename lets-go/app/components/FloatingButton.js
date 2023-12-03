@@ -3,8 +3,6 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
 
 
-// A floating action button with a plus icon in the center
-// and a background color of #8fb35b and a white plus icon
 export default function FloatingButton({ onPress }) {
   return (
     <TouchableOpacity onPress={ onPress }>
@@ -26,7 +24,6 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 25,
     right: 25,
-    //thin white border
     borderWidth: 4,
     borderColor: '#728F48'
   },
