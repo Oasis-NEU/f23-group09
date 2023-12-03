@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "react-native-calendars": "^1.1302.0",
+    "react-native-paper": "^5.11.3"
+  }
+}
